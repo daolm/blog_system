@@ -16,6 +16,7 @@ class CommentsController < ApplicationController
       redirect_to @micropost
     else
       @feed_items = []
+      flash[:error] = "Name and content of comment can't be empty!"
       redirect_to @micropost
     end
   end
