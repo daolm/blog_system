@@ -16,7 +16,7 @@ class CommentsController < ApplicationController
       redirect_to @micropost
     else
       @feed_items = []
-      render 'static_pages/home'
+      redirect_to @micropost
     end
   end
 
